@@ -1,0 +1,4 @@
+.CodeMirror {
+    @apply text-lg;
+    min-height: 500px;
+}

@@ -1,0 +1,78 @@
+.landing {
+    @apply dark:bg-gray-900 flex flex-col justify-around items-center w-screen lg:relative;
+    height: 92vh;
+}
+
+.title {
+    @apply flex flex-col justify-around px-12 h-1/5 dark:text-white sm:items-center lg:items-start lg:absolute lg:top-1/4 lg:left-0;
+}
+
+.title h1 {
+    @apply text-2xl font-bold lg:text-4xl;
+}
+
+.title h1 span {
+    @apply dark:text-yellow-400 text-red-600 italic;
+}
+
+.title h2 {
+    @apply text-lg lg:text-2xl lg:w-2/5;
+}
+
+.title h2 span {
+    @apply dark:text-yellow-400 text-red-600;
+}
+
+.action-vector {
+    @apply relative w-screen sm:w-2/3 md:w-1/2 lg:w-1/2 flex flex-col-reverse justify-between items-center lg:self-end;
+}
+
+.action-vector #programmer {
+    @apply w-2/3 h-full lg:w-1/2;
+}
+
+.action-vector .sun-moon {
+    @apply absolute w-full right-0 top-1/2 hidden md:block;
+    height: 180%;
+    transform: translateY(-50%);
+}
+
+.action-vector #bigSun {
+    @apply animate-sun-undulate w-1/5 mr-8 self-end my-10;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+
+.action-vector #sun-border {
+    @apply animate-sun-spin origin-center w-full;
+    animation-duration: 6s;
+}
+
+.start-button {
+    @apply text-center mx-12 rounded-sm border-2 bg-transparent border-red-500 dark:border-yellow-400 dark:text-white w-1/3
+    lg:w-1/6 py-4 text-lg lg:absolute lg:left-0 lg:bottom-1/3 lg:mb-12 hover:bg-red-500 hover:text-white dark:hover:bg-yellow-400;
+}
+
+.action-vector #moon {
+    @apply self-end my-10 w-1/5;
+    animation-duration: 3s;
+}
+
+#cloud1 {
+    @apply animate-cloud-move-left;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    opacity: 0.8;
+}
+
+#cloud2 {
+    @apply animate-cloud-move-right;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    fill: #f1f1bf;
+}
+
+#the-moon {
+    fill: #fff500;
+    opacity: 0.9;
+}

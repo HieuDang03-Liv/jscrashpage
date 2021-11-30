@@ -1,0 +1,35 @@
+.tasks-page {
+    @apply dark:bg-gray-900 dark:text-gray-300;
+    min-height: 92vh;
+}
+
+.text-introduce h2 {
+    @apply text-center md:text-6xl mb-8 dark:text-yellow-400 text-red-600;
+}
+
+.tutorials-block {
+    @apply text-2xl w-4/5 flex flex-col relative left-1/2;
+    transform: translateX(-50%);
+}
+
+.tutorials-block .tutorial {
+    @apply flex flex-col;
+}
+
+.tutorials-block .tutorial .introduce {
+    @apply mb-12 md:text-xl border-t-4 border-r-4 -ml-6 mr-6 flex justify-between pr-8;
+}
+
+.tutorials-block .tutorial .introduce h3 {
+    @apply uppercase md:text-4xl mb-6 font-bold mt-2;
+}
+
+.tutorials-block .tutorial ul {
+    @apply flex flex-col ml-12 -mr-12;
+}
+
+.tutorials-block .tutorial ul li {
+    @apply capitalize my-4 border-4 p-2 border-gray-300 text-left hover:bg-gray-400 dark:hover:bg-gray-700 hover:border-gray-300;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
