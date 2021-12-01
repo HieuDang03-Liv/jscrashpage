@@ -16,25 +16,28 @@ exports.createPages = async ({ graphql, actions }) => {
     data.allMarkdownRemark.nodes.forEach((node) => {
         actions.createPage({
             path: `/tasks/${node.frontmatter.course}/${node.frontmatter.direction}`,
-            component: path.resolve('./src/template/task-details.js'),
+            component: path.resolve('./src/templates/task-details.js'),
             context: {
-                direction: node.frontmatter.direction
-            }
+                direction: node.frontmatter.direction,
+            },
         })
     })
 }
-
-// exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-//     if (stage === 'build-html' || stage === 'develop-html') {
-//         actions.setWebpackConfig({
-//             module: {
-//                 rules: [
-//                     {
-//                         test: /react-p5/,
-//                         use: 'null-loader'
-//                     }
-//                 ]
-//             }
-//         })
-//     }
-// }
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === 'build-html' || stage === 'develop-html') {
+        actions.setWebpackConfig({
+            module: {
+                rules: [
+                    {
+                        test: /codemirror/,
+                        use: 'null-loader',
+                    },
+                    {
+                        test: /react-codemirror2/,
+                        use: 'null-loader',
+                    },
+                ],
+            },
+        })
+    }
+}

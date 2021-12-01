@@ -2,11 +2,8 @@ import React, { useEffect, useReducer } from 'react'
 
 export const DarkThemeContext = React.createContext()
 
-let initialDarkThemeState
-
-// useEffect(() => {
-initialDarkThemeState = JSON.parse(window.localStorage.getItem('dark-theme'))
-// }, [])
+const isBrowser = () => typeof window !== 'undefined'
+isBrowser() && window.localStorage.getItem('dark-theme')
 
 const darkThemeReducer = (state, action) => {
     switch (action.type) {
@@ -20,6 +17,9 @@ const darkThemeReducer = (state, action) => {
 }
 
 const DarkThemeProvider = ({ children }) => {
+    const initialDarkThemeState = JSON.parse(
+        window.localStorage.getItem('dark-theme')
+    )
     const [darkTheme, dispatch] = useReducer(
         darkThemeReducer,
         initialDarkThemeState

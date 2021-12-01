@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { Controlled } from 'react-codemirror2'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/theme/eclipse.css'
@@ -28,7 +28,7 @@ function CodeEditor({ value, onChange, lang, display, autoFocus, lineSep }) {
                     lineNumbers: true,
                     autoCloseBrackets: true,
                     autofocus: autoFocus,
-                    lineSeparator: lineSep
+                    lineSeparator: lineSep,
                 }}
             />
         </div>

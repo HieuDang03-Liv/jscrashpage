@@ -1,54 +1,31 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+#This is a JavaScript sharing knowledge page for beginners in Vietnamese.
 
-## 🚀 Quick start
+The page is pretty simple, focus on contents written in markdown file.
 
-1.  **Create a Gatsby site.**
+**Simple landing page**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+![landing page in dark mode](https://firebasestorage.googleapis.com/v0/b/js-for-beginners.appspot.com/o/README%2Flp1.png?alt=media&token=b86cf9b0-0fa5-4df3-9b09-9d76fe440523)
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+I've learned from **freeCodeCamp** for years, and ispired by this awesome page. So i wanna build a freeCodeCamp-like for Vietnamese who are new in programming world.
 
-2.  **Start developing.**
+##The lessons overview
 
-    Navigate into your new site’s directory and start it up.
+![lessons overview](https://firebasestorage.googleapis.com/v0/b/js-for-beginners.appspot.com/o/README%2Flp2.png?alt=media&token=a32b7052-915f-4712-b797-c187133f6464)
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+##A lesson's details
 
-3.  **Open the code and start customizing!**
+![lessons details](https://firebasestorage.googleapis.com/v0/b/js-for-beginners.appspot.com/o/README%2Flp3.png?alt=media&token=5e6d619f-68ed-4b4d-aedb-0dcd6ce04659)
 
-    Your site is now running at http://localhost:8000!
+###And the light mode 🔅
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+![light mode](https://firebasestorage.googleapis.com/v0/b/js-for-beginners.appspot.com/o/README%2Flp4.png?alt=media&token=1dfd727b-e190-4f61-be84-b7fb595d3e7f)
 
-4.  **Learn more**
+![landing page light](https://firebasestorage.googleapis.com/v0/b/js-for-beginners.appspot.com/o/README%2Flp5.png?alt=media&token=c4fe431d-43b0-4c5e-b22f-3ead0079fa9f)
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+I've used **GatsbyJS** as the main technology. **Transformer remark** for writing markdown files.
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+The editor is featured by **CodeMirror**.
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+And images used for each lesson are stored on **Cloud Storage (Firebase)**.
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+I am not so good at CSS, but i love Tailwind. The framework i'll use whenever i could.

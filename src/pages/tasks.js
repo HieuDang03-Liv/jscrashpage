@@ -3,8 +3,11 @@ import React, { useRef } from 'react'
 import HeaderBar from '../components/HeaderBar'
 import '../styles/task.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircle } from '@fortawesome/free-regular-svg-icons'
-import { faEllipsisH, faArrowDown, faCode } from '@fortawesome/free-solid-svg-icons'
+import {
+    faEllipsisH,
+    faArrowDown,
+    faCode,
+} from '@fortawesome/free-solid-svg-icons'
 import { faJsSquare } from '@fortawesome/free-brands-svg-icons'
 import { Helmet } from 'react-helmet'
 
@@ -30,14 +33,14 @@ function Tasks({ data }) {
             <Helmet>
                 <title>Tutorials</title>
             </Helmet>
-            <div className="tasks-page">
-                <div className="text-introduce">
+            <div className='tasks-page'>
+                <div className='text-introduce'>
                     <h2>Đến với Lập trình và Javascript</h2>
                 </div>
 
-                <div className="tutorials-block">
-                    <div className="tutorial">
-                        <div className="introduce">
+                <div className='tutorials-block'>
+                    <div className='tutorial'>
+                        <div className='introduce'>
                             <div>
                                 <h3>
                                     {' '}
@@ -47,11 +50,15 @@ function Tasks({ data }) {
                                     into programming
                                 </h3>
                                 <div>
-                                    Các khái niệm cơ bản ở tất cả các ngôn ngữ lâp trình được trình
-                                    bày qua ngôn ngữ JavaScript.
+                                    Các khái niệm cơ bản ở tất cả các ngôn ngữ
+                                    lâp trình được trình bày qua ngôn ngữ
+                                    JavaScript.
                                 </div>
                             </div>
-                            <button onClick={toggleIntoProgrammingList} ref={buttonRef}>
+                            <button
+                                onClick={toggleIntoProgrammingList}
+                                ref={buttonRef}
+                            >
                                 <FontAwesomeIcon icon={faArrowDown} />
                             </button>
                         </div>
@@ -59,17 +66,21 @@ function Tasks({ data }) {
                             {taskLinks.map((taskLink) => (
                                 <Link
                                     to={`/tasks/into-programming/${taskLink.frontmatter.direction}`}
-                                    key={taskLink.frontmatter.order}>
+                                    key={taskLink.frontmatter.order}
+                                >
                                     <li>
-                                        <FontAwesomeIcon icon={faEllipsisH} className="mr-4" />
+                                        <FontAwesomeIcon
+                                            icon={faEllipsisH}
+                                            className='mr-4'
+                                        />
                                         {taskLink.frontmatter.title}
                                     </li>
                                 </Link>
                             ))}
                         </ul>
                     </div>
-                    <div className="tutorial">
-                        <div className="introduce">
+                    <div className='tutorial'>
+                        <div className='introduce'>
                             <div>
                                 <h3>
                                     {' '}
@@ -78,7 +89,10 @@ function Tasks({ data }) {
                                     </span>{' '}
                                     into javascript
                                 </h3>
-                                <div>Các khái niệm đặc trưng của JavaScript (coming soon).</div>
+                                <div>
+                                    Các khái niệm đặc trưng của JavaScript
+                                    (coming soon).
+                                </div>
                             </div>
                             <button>
                                 <FontAwesomeIcon icon={faArrowDown} />
